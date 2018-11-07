@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     public void sendCustomBroadcast(View view){
         Intent intent = new Intent();
         intent.setAction(I_AM_HOME);
-        intent.putExtra("pos",new Random().nextInt(5));
+        intent.putExtra("pos",new Random().nextInt(6));
         sendBroadcast(intent);
 
     }
